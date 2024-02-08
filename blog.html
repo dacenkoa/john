@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>john-blog</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-inner">
+                <button class="burger__container" onclick="wensday(this)">
+                    <div class="burgerBtn1"></div>
+                    <div class="burgerBtn2"></div>
+                    <div class="burgerBtn3"></div>
+                </button>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="index.html" class="header__link ">Resume</a></li>
+                        <li class="header__item"><a href="work.html" class="header__link">Works</a></li>
+                        <li class="header__item"><a href="blog.html" class="header__link active ">Blog</a></li>
+                        <li class="header__item"><a href="usability.html" class="header__link">Usability</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <h1 class="blog__title">Blog</h1>
+                        <div class="blog__content">
+                            <h3 class="blog__content-title">UI Interactions of the week</h3>
+                            <div class="blog__date">
+                                <p class="blog__date-text">12 Feb 2019</p>
+                                <p class="blog__date-text">|</p>
+                                <p class="blog__date-text">Express, Handlebars</p>
+                            </div>
+                            <p class="blog__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                        <div class="blog__content">
+                            <h3 class="blog__content-title">UI Interactions of the week</h3>
+                            <div class="blog__date">
+                                <p class="blog__date-text">12 Feb 2019</p>
+                                <p class="blog__date-text">|</p>
+                                <p class="blog__date-text">Express, Handlebars</p>
+                            </div>
+                            <p class="blog__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                        <div class="blog__content">
+                            <h3 class="blog__content-title">UI Interactions of the week</h3>
+                            <div class="blog__date">
+                                <p class="blog__date-text">12 Feb 2019</p>
+                                <p class="blog__date-text">|</p>
+                                <p class="blog__date-text">Express, Handlebars</p>
+                            </div>
+                            <p class="blog__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                        <div class="blog__content">
+                            <h3 class="blog__content-title">UI Interactions of the week</h3>
+                            <div class="blog__date">
+                                <p class="blog__date-text">12 Feb 2019</p>
+                                <p class="blog__date-text">|</p>
+                                <p class="blog__date-text">Express, Handlebars</p>
+                            </div>
+                            <p class="blog__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <nav class="footer__sociale">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="" class="footer__menu-link"><img
+                                        src="img/sociale_1.svg" alt="" class="footer__menu-img"></a></li>
+                            <li class="footer__menu-item"><a href="" class="footer__menu-link"><img
+                                        src="img/sociale_2.svg" alt="" class="footer__menu-img"></a></li>
+                            <li class="footer__menu-item"><a href="" class="footer__menu-link"><img
+                                        src="img/sociale_3.svg" alt="" class="footer__menu-img"></a></li>
+                            <li class="footer__menu-item"><a href="" class="footer__menu-link"><img
+                                        src="img/sociale_4.svg" alt="" class="footer__menu-img"></a></li>
+                        </ul>
+                    </nav>
+                    <p class="footer__copy">Copyright ©2020 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script>
+    let menu = document.querySelector('.header__menu')
+    let headerInner = document.querySelector('.header-inner')
+    let burgerBtnOne = document.querySelector('.burgerBtn1')
+    let burgerBtnTwo = document.querySelector('.burgerBtn2')
+    let burgerBtnThree = document.querySelector('.burgerBtn3')
+    let body = document.querySelector('body')
+    let headerItem = document.querySelector('.header__list')
+    function wensday(test){
+        test.classList.toggle('burger__active')
+        menu.classList.toggle('burger__active')
+        headerInner.classList.toggle('burger__active')
+        burgerBtnOne.classList.toggle('burger__active')
+        burgerBtnTwo.classList.toggle('burger__active')
+        burgerBtnThree.classList.toggle('burger__active')
+        body.classList.toggle('burger__active')
+        headerItem.classList.toggle('burger__active')
+    }
+</script>
+</body>
+
+</html>
